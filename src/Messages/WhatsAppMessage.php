@@ -22,13 +22,13 @@ class WhatsAppMessage implements MessageInterface
         return $this;
     }
 
-    public function getOriginNumber(): int
+    public function getOriginNumber(): string
     {
         return $this->origin_number;
     }
 
 
-    public function setOriginNumber(int $origin_number): self
+    public function setOriginNumber(string $origin_number): self
     {
         $this->origin_number = $origin_number;
 
